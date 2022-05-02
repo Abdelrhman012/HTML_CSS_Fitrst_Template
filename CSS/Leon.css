@@ -426,8 +426,14 @@ body{
     background-color: var(--main-color);
     left: -20px;
     top: -20px;
+    transition: 0.3s;
     z-index: -1;
 }
+
+.about .about-image:hover::before{
+    width: 100%;
+}
+
 
 .about .about-image::after{
     content: "";
@@ -437,8 +443,14 @@ body{
     border-left: 85px solid #f6f6ff;
     border-bottom: 85px solid #f6f6ff;
     top: -20px;
-    right: -140px;
+    right: -120px;
+    transition: 0.3s;
     z-index: -1;
+}
+
+.about .about-image:hover::after{
+    border-bottom: 0 solid #f6f6ff;
+    height: calc(100% + 40px);
 }
 
 .about h4{
